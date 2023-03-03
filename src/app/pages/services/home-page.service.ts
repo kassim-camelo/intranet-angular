@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { delay, first, tap } from 'rxjs';
 
 import { News } from '../models/home-page';
 
@@ -8,11 +9,16 @@ import { News } from '../models/home-page';
 })
 export class HomePageService {
 
+  private readonly API = '/assets/anews.json';
+
   constructor(public httpClient: HttpClient) { }
 
-  list(): News[] {
-    return [
-      { _id: '001', headline: 'Prevenção ao coronga', tags: 'pandemia'}
-    ];
+  list() {
+    return this.httpClient.get<News[]>(this.API)
+    .pipe(
+      first(),
+      delay(500),
+      tap(news => console.log(news))
+    );
   }
 }
