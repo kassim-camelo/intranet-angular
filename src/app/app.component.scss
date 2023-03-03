@@ -1,4 +1,11 @@
 .logo{
   height: 70px;
   width: auto;
+  padding-left: 10px;
+  &:hover {
+    background-color: rgb(4, 86, 127)
+  }
+}
+.navmenu{
+  padding-left: 0px;
 }
