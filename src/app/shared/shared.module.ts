@@ -4,17 +4,18 @@ import { CommonModule } from '@angular/common';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 
 
-
 @NgModule({
   declarations: [
-    ErrorDialogComponent
+    ErrorDialogComponent,
   ],
   imports: [
     AppMaterialModule,
-    CommonModule
+    CommonModule,
+    AppMaterialModule
   ],
   exports: [
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    AppMaterialModule
   ]
 })
 export class SharedModule { }

@@ -1,17 +1,26 @@
-<mat-toolbar color="primary">
-  <div class="navmenu">
-    <button mat-icon-button color="secondary" aria-label="menu">
+<div class="navbar">
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="accent" aria-label="toggle menu" (click)="opened =! opened">
       <mat-icon>menu</mat-icon>
     </button>
-  </div>
+    <a href="./home">
+      <img
+        class="logo logo-mask"
+        src="../assets/images/logo_branca.png"
+        alt="UniAteneu : Home"
+    /></a>
+  </mat-toolbar>
+</div>
+
+<div class="sidemenu">
+  <mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="push" >
+      start
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
 
 
-
-  <a href="./home">
-    <img
-      class="logo"
-      src="../assets/images/logo_branca.png"
-      alt="UniAteneu : Home"
-  /></a>
-</mat-toolbar>
-<router-outlet></router-outlet>

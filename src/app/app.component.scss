@@ -3,9 +3,16 @@
   width: auto;
   padding-left: 10px;
   &:hover {
-    background-color: rgb(4, 86, 127)
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgb(4, 86, 127);
   }
 }
-.navmenu{
-  padding-left: 0px;
+
+.mat-sidenav-container{
+  height: calc(205vh - 115vh);
+}
+.mat-sidenav{
+  width: 100px;
+  background-color: red;
 }
