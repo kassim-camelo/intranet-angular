@@ -1,18 +1,55 @@
+@keyframes button{
+  0% { border-bottom: hidden;
+    border-width: 0px, 0px, 0px, 0px;
+  }
+  50% { border-bottom: solid;
+    border-width: 0px, 0px, 4px, 0px;
+    border-color: #78A1BB;
+  }
+  to{ border-bottom: solid;
+    border-width: 0px, 0px, 2px, 0px;
+    border-color: #EBF5EE;
+  }
+}
+
+
 .logo{
   height: 70px;
   width: auto;
-  padding-left: 10px;
   &:hover {
+    animation-name: button;
+    animation-duration: 0.3s;
     opacity: 0.3;
     transition: opacity 0.3s ease-in-out;
-    background-color: rgb(4, 86, 127);
+    background-color: rgb(32, 39, 67);
+    animation-iteration-count: infinite;
   }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  margin-right: -80px;
+}
+
+.main{
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.mat-toolbar{
+  background-color: #283044;
 }
 
 .mat-sidenav-container{
   height: calc(205vh - 115vh);
 }
 .mat-sidenav{
-  width: 100px;
-  background-color: red;
+  width: 200px;
+  background-color: #78A1BB; // air superiority blue
 }
