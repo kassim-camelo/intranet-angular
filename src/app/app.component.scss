@@ -11,6 +11,18 @@
   }
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* Define a posição como fixa */
+  top: 0; /* Define a posição vertical como 0 */
+  left: 0; /* Define a posição horizontal como 0 */
+  width: 20%; /* Define a largura como 20% do viewport width + 1 pixel */
+  height: 100%; /* Define a altura como 100% da tela */
+  background-color: #f1f1f1; /* Define a cor de fundo */
+
+}
+
 
 
 .options{
@@ -19,9 +31,13 @@
   top: 11vh;
 }
 
+.content root {
+  width: inherit;
+}
+
 .root {
+  width: 80%;
   position: absolute;
-  left: 23vw; /* Largura da barra lateral */
   right: 0;
   bottom: 0;
   top: 0;
@@ -46,13 +62,5 @@
 }
 
 .mat-toolbar{
-  background-color: #283044;
-}
-
-.mat-sidenav-container{
-  height: calc(205vh - 115vh);
-}
-.mat-sidenav{
-  width: 200px;
-  background-color: #78A1BB; // air superiority blue
+  background-color: transparent;
 }

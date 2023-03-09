@@ -1,3 +1,4 @@
+import { OptionsComponent } from './menu/options/options.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -8,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { MenuModule } from "./menu/menu.module";
+import { MenuModule } from '../app/menu/menu.module';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { MenuModule } from "./menu/menu.module";
         MenuModule
     ],
     exports: [
-      MenuModule
+      OptionsComponent
     ]
 })
 export class AppModule {

@@ -16,15 +16,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
-.sidebar {
-  position: fixed; /* Define a posição como fixa */
-  top: 0; /* Define a posição vertical como 0 */
-  left: 0; /* Define a posição horizontal como 0 */
-  width: calc(20vw + 1px); /* Define a largura como 20% do viewport width + 1 pixel */
-  height: 100%; /* Define a altura como 100% da tela */
-  background-color: #f1f1f1; /* Define a cor de fundo */
-  padding: 20px; /* Define um espaçamento interno para os botões */
-}
+
 
 
 // background styling
