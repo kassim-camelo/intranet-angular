@@ -1,1 +1,38 @@
-<p>options works!</p>
+<div class="main-options">
+<button class="options" (mouseenter)="showOpt =! showOpt" (mouseleave)="showOpt =! showOpt">
+  <span class="top-key"></span>
+  Botão!
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+</button>
+
+
+<ul class="options" *ngIf="showOpt">
+
+  <li class="options">
+    <button class="opc">
+      <span class="top-key"></span>
+      <a href="/ferramentas">Ferramentas</a>
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+    </button>
+  </li>
+
+
+
+
+  <br />
+
+
+
+  <li class="options">
+    <button class="opc">
+      <span class="top-key"></span>
+      <a href="/drivers">Drivers</a>
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+    </button>
+  </li>
+
+</ul>
+</div>

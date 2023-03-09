@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./options.component.scss']
 })
 export class OptionsComponent {
+  showOpt = false;
 
 }

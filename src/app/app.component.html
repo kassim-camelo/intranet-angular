@@ -1,8 +1,7 @@
+<div class="root">
+
 <div class="navbar">
   <mat-toolbar>
-    <button class="menu" mat-icon-button color="accent" aria-label="toggle menu" (click)="opened =! opened">
-      <mat-icon>menu</mat-icon>
-    </button>
     <a href="./home" class="main">
       <img
         class="logo logo-mask"
@@ -11,16 +10,9 @@
     /></a>
   </mat-toolbar>
 </div>
-
-<div class="sidemenu">
-  <mat-sidenav-container>
-    <mat-sidenav [(opened)]="opened" mode="push" >
-      start
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+<router-outlet></router-outlet>
 </div>
 
-
+<div class="options">
+  <app-options></app-options>
+</div>
