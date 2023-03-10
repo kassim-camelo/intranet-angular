@@ -1,13 +1,24 @@
-.mat-accordion {
-  background-color: transparent;
+.options{
+  opacity: 0;
+  transition: opacity 0.2s linear;
 }
 
-
-
-.options{
+.main-options{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  margin-left: 0px;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  padding-right: 50px;
+  &:hover{
+    .options{
+      opacity: 1;
+      justify-content: center;
+      display: block;
+    }
+  }
 }
 
 
@@ -23,7 +34,7 @@ button.opc {
   float: right;
   font-weight: 700;
   letter-spacing: .05em;
-  margin: 0;
+  margin-left: 0px;
   outline: none;
   overflow: visible;
   padding: 1.25em 2em;
@@ -33,7 +44,7 @@ button.opc {
   text-transform: none;
   transition: all .3s ease-in-out;
   user-select: none;
-  width: 16.8125rem;
+  width: 100%;
 
   &::before {
     content: " ";
@@ -58,7 +69,7 @@ button.opc {
     text-align: left;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     text-decoration: none;
     color: black;
   }

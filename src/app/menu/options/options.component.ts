@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./options.component.scss']
 })
 export class OptionsComponent {
-  showOpt = false;
+  flag1 = false;
+  flag2 = false;
+  flag3 = false;
 
 }

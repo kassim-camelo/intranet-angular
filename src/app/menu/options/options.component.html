@@ -1,38 +1,101 @@
-<div class="main-options">
-<button class="options" (mouseenter)="showOpt =! showOpt" (mouseleave)="showOpt =! showOpt">
-  <span class="top-key"></span>
-  Botão!
-      <span class="bottom-key-1"></span>
-      <span class="bottom-key-2"></span>
-</button>
+<div class="main-options" (mouseleave)="flag1 = false">
+  <button class="opc" (mouseenter)="flag1 = true">
+    <span class="top-key"></span>
+    Botão!
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </button>
 
+  <ul class="options" style="list-style: none; margin: 0; padding: 0;">
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/ferramentas">Ferramentas</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
 
-<ul class="options" *ngIf="showOpt">
+    <br />
 
-  <li class="options">
-    <button class="opc">
-      <span class="top-key"></span>
-      <a href="/ferramentas">Ferramentas</a>
-      <span class="bottom-key-1"></span>
-      <span class="bottom-key-2"></span>
-    </button>
-  </li>
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Drivers</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
 
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Tutoriais</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+  </ul>
+</div>
 
+<div class="main-options" (mouseleave)="flag2 = false">
+  <button class="opc" (mouseenter)="flag2 = true">
+    <span class="top-key"></span>
+    Botão!
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </button>
 
+  <ul class="options" style="list-style: none; margin: 0; padding: 0;" *ngIf="flag2">
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/ferramentas">Ferramentas</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
 
-  <br />
+    <br />
 
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Drivers</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+  </ul>
+</div>
 
+<div class="main-options" (mouseleave)="flag3 = false">
+  <button class="opc" (mouseenter)="flag3 = true">
+    <span class="top-key"></span>
+    Botão!
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </button>
 
-  <li class="options">
-    <button class="opc">
-      <span class="top-key"></span>
-      <a href="/drivers">Drivers</a>
-      <span class="bottom-key-1"></span>
-      <span class="bottom-key-2"></span>
-    </button>
-  </li>
+  <ul class="options" style="list-style: none; margin: 0; padding: 0;" *ngIf="flag3">
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/ferramentas">Ferramentas</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
 
-</ul>
+    <br />
+
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Drivers</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+  </ul>
 </div>
