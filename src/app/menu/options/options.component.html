@@ -1,7 +1,7 @@
 <div class="main-options" (mouseleave)="flag1 = false">
   <button class="opc" (mouseenter)="flag1 = true">
     <span class="top-key"></span>
-    Botão!
+    <a>Botão!</a>
     <span class="bottom-key-1"></span>
     <span class="bottom-key-2"></span>
   </button>
@@ -41,7 +41,7 @@
 <div class="main-options" (mouseleave)="flag2 = false">
   <button class="opc" (mouseenter)="flag2 = true">
     <span class="top-key"></span>
-    Botão!
+    <a>Botão!</a>
     <span class="bottom-key-1"></span>
     <span class="bottom-key-2"></span>
   </button>
@@ -72,12 +72,12 @@
 <div class="main-options" (mouseleave)="flag3 = false">
   <button class="opc" (mouseenter)="flag3 = true">
     <span class="top-key"></span>
-    Botão!
+    <a>Botão!</a>
     <span class="bottom-key-1"></span>
     <span class="bottom-key-2"></span>
   </button>
 
-  <ul class="options" style="list-style: none; margin: 0; padding: 0;" *ngIf="flag3">
+  <ul class="options" style="list-style: none; margin: 0; padding: 0;">
     <li class="options">
       <button class="opc">
         <span class="top-key"></span>
@@ -93,6 +93,55 @@
       <button class="opc">
         <span class="top-key"></span>
         <a href="/drivers">Drivers</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Tutoriais</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="main-options" (mouseleave)="flag4 = false">
+  <button class="opc" (mouseenter)="flag4 = true">
+    <span class="top-key"></span>
+    <a>Botão!</a>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+  </button>
+
+  <ul class="options" style="list-style: none; margin: 0; padding: 0;">
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/ferramentas">Ferramentas</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+
+    <br />
+
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Drivers</a>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </button>
+    </li>
+
+    <li class="options">
+      <button class="opc">
+        <span class="top-key"></span>
+        <a href="/drivers">Tutoriais</a>
         <span class="bottom-key-1"></span>
         <span class="bottom-key-2"></span>
       </button>

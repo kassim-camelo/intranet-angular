@@ -1,21 +1,29 @@
+
+
 <div class="root">
+  <div class="navbar">
+    <mat-toolbar>
+      <span>TESTE</span>
+    </mat-toolbar>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
-<div class="navbar">
-  <mat-toolbar>
-    <a href="./home" class="main">
-      <img
-        class="logo logo-mask"
-        src="../assets/images/logo_branca.png"
-        alt="UniAteneu : Home"
+<div class="side">
+  <a href="./home" class="main main-mask">
+    <img class="biloto" src="../assets/images/biloto-ateneu.png" />
+    <img
+    class="logo logo-mask"
+      src="../assets/images/logo_branca.png"
+      alt="UniAteneu : Home"
     /></a>
-  </mat-toolbar>
-</div>
-<div class="content">
-<router-outlet></router-outlet>
-</div>
+    <div class="sidebar">
+      <app-options></app-options>
+    </div>
+  </div>
 
-</div>
-<div class="sidebar">
-  <app-options></app-options>
-</div>
+  <div class="footer">
 
+  </div>

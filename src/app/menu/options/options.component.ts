@@ -9,5 +9,5 @@ export class OptionsComponent {
   flag1 = false;
   flag2 = false;
   flag3 = false;
-
+  flag4= false;
 }
